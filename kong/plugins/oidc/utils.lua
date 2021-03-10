@@ -79,6 +79,7 @@ function M.get_options(config, ngx)
     bearer_jwt_auth_signing_algs = config.bearer_jwt_auth_signing_algs,
     header_names = config.header_names or {},
     header_claims = config.header_claims or {}
+    revoke_tokens_on_logout = config.revoke_tokens_on_logout == "yes",
   }
 end
 
